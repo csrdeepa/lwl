@@ -1,0 +1,91 @@
+/* partner  */
+.partner-carousel-container{
+    padding: 3rem 0px;
+}
+.partner-card{
+    height: 320px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* width: 370px; */
+}
+.partner-carousel{
+    margin-bottom: 20px;
+}
+.partner-card img{
+    height: 150px;
+    /* width: 270px !important; */
+    object-fit: contain;
+    margin-bottom: 12px;
+    background: #fff;
+    border-radius: 10px;
+}
+.partner-card img:nth-child(2){
+    position: absolute;
+    bottom: -8px;
+    right: -127px;
+}
+.partner-carousel .owl-item{
+
+}
+.partner-carousel .owl-stage {
+    right: -40px;
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 14px; */
+ }
+ .partner-carousel .owl-stage .owl-item{
+     /* width: 100% !important; */
+ }
+ .partner-carousel-2 .owl-stage {
+    left: -40px;
+ }
+ .partner-carousel .owl-nav{
+    position: absolute;
+    top: -50px;
+    right: 40px;
+ }
+ .partner-carousel .owl-nav button, .partner-carousel .owl-nav button:hover{
+     position: relative;
+     width: 30px;
+    height: 20px;
+    background: transparent !important;
+ }
+ .partner-carousel .owl-nav button span{
+  display: none;
+}
+.partner-carousel .owl-nav button.owl-prev::before{
+    content: "";
+    background: url('/wp-content/uploads/2022/04/left-arrow.svg') no-repeat;
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    background-size: 100%;
+}
+.partner-carousel .owl-nav button.owl-next::before{
+    content: "";
+    background: url('/wp-content/uploads/2022/04/right-arrow.svg') no-repeat;
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    background-size: 100%;
+    transform: rotate(180deg);
+}
+.partner-carousel-container .owl-stage {
+  display: flex;
+}
+@media(max-width:600px){
+    .partner-carousel .owl-stage {
+        right:0px !important;
+     }
+     .partner-carousel-2 .owl-stage {
+        left:0px !important;
+     }
+}
